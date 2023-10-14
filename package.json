@@ -1,9 +1,8 @@
 {
-  "name": "@okxiaoliang4/unocss",
+  "name": "@okxiaoliang4/uni-unocss",
   "version": "0.0.1",
   "description": "",
   "packageManager": "pnpm@8.9.0",
-  "private": "false",
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
@@ -13,8 +12,11 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "dependencies": {
+    "@uni-helper/uni-env": "^0.0.3"
+  },
   "devDependencies": {
-    "@uni-helper/uni-env": "^0.0.3",
+    "@types/node": "^20.8.6",
     "unbuild": "^2.0.0",
     "unocss": "0.53.1"
   }
