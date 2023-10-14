@@ -1,0 +1,21 @@
+{
+  "name": "@okxiaoliang4/unocss",
+  "version": "0.0.1",
+  "description": "",
+  "packageManager": "pnpm@8.9.0",
+  "private": "false",
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepublishOnly": "pnpm build"
+  },
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@uni-helper/uni-env": "^0.0.3",
+    "unbuild": "^2.0.0",
+    "unocss": "0.53.1"
+  }
+}
