@@ -60,8 +60,8 @@ export const uniVariants: (opt?: Options) => VariantFunction = (opt = {}) => (ma
 
   return {
     matcher: selector,
+    selector: () => `.${selector}`,
     handle(input) {
-      input.selector = `.${selector}`
       if (!process.env.UNI_PLATFORM)
         return input
       if (
