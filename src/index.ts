@@ -56,11 +56,9 @@ export const uniVariants: (opt?: Options) => VariantFunction = (opt = {}) => (ma
 
   const ind = matcher.indexOf(':')
   const matchKey = matcher.slice(0, ind)
-  const selector = matcher.slice(ind + 1)
 
   return {
-    matcher: selector,
-    selector: () => `.${selector}`,
+    matcher: matcher.slice(ind + 1),
     handle(input) {
       if (!process.env.UNI_PLATFORM)
         return input
