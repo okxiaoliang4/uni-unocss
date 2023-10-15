@@ -15,5 +15,9 @@ export default defineConfig({
     }),
   ],
 })
+```
 
+```vue
+<!-- 仅在支付宝下编译 ml-2，仅在微信下编译 ml-3 -->
+<view class="ali:ml-2 wx:ml-3"></view>
 ```
