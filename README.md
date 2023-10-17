@@ -1,3 +1,5 @@
+已废弃，已迁移到 `https://github.com/uni-helper/unocss-uni`
+
 ```bash
 pnpm i @okxiaoliang4/unocss -D
 ```
